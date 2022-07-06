@@ -12,10 +12,6 @@ const connect = () => {
   conn.on('data', (data) => console.log(data))
 
   return conn;
-
 }
-
-console.log("Connecting ...");
-connect();
 
 module.exports = connect;

@@ -6,6 +6,8 @@ const connect = () => {
   conn.on('connect', () => {
     console.log('Successfully connected to game server')
     conn.write("Name: AA")
+    //conn.write("Move: up")
+  
   })
   conn.on('data', (data) => console.log(data))
 
